@@ -11,10 +11,8 @@ interface NewsProviderProps {
   children: ReactNode;
 }
 
-// Crear el contexto
 export const NewsContext = createContext<NewsContextProps>({ news: [] });
 
-// Crear el proveedor
 export const NewsProvider: React.FC<NewsProviderProps> = ({ children }) => {
   const [news, setNews] = useState<any[]>([]);
 

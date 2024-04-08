@@ -3,13 +3,13 @@ import React from "react";
 interface SmallPictureProps {
   src: string;
   name: string;
-  proffession: string;
+  publiDate: string;
 }
 
 export const SmallPicture: React.FC<SmallPictureProps> = ({
   src,
   name,
-  proffession,
+  publiDate,
 }) => {
   return (
     <div>
@@ -18,7 +18,7 @@ export const SmallPicture: React.FC<SmallPictureProps> = ({
         <span className="flex-grow flex flex-col pl-4">
           <span className="title-font font-medium text-gray-900">{name}</span>
           <span className="text-gray-400 text-xs tracking-widest mt-0.5">
-            {proffession}
+            {publiDate}
           </span>
         </span>
       </a>
